@@ -1,4 +1,4 @@
-# Reto testing con Reacto
+# Reto testing con React
 
 
 ## Integrantes
