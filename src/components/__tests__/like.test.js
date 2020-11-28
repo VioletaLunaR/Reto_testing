@@ -54,8 +54,8 @@ describe("Testing Like component", () => {
         //si no es cero, se hace la prueba como está a continuación. 
         //
         //Otra forma, sería que el botón decrement estuviera desabilitado cuando el número de likes es 0. 
-        //En la pruba se mirara que si la variable likes es cero, el botón esté desabilidado, y si 
-        //no es cero, se realiza la pruba haciendo el clik verificando como sigue. 
+        //En la pruba se miraría que si la variable likes es cero, el botón esté desabilidado, y si 
+        //no es cero, se realiza la pruba haciendo el clik y verificando como sigue. 
         expect(parseInt(p.textContent.split(':')[1].trim(), 10)).toBe(likes-1);
     })
 
