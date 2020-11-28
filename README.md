@@ -2,9 +2,9 @@
 
 
 ## Integrantes
-Santiago Beltrán
-Julian Montoya
-Violeta Rodríguez
+* Santiago Beltrán
+* Julian Montoya
+* Violeta Rodríguez
 
 ## Observaciones
 Todos los test solicitados fueron realizados y pasados. 
