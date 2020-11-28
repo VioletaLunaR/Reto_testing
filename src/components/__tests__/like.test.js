@@ -4,6 +4,7 @@ import { act } from "react-dom/test-utils";
 import Like from "../like";
 
 let container;
+var likes;
 
 beforeEach(() => {
     container = document.createElement("div");
@@ -29,14 +30,15 @@ describe("Testing Like component", () => {
         console.log(p.textContent.split(':')[1])
         expect(p.textContent.split(':')[1].trim()).toBe("0");
     });
-    // it("Checkbox status and label changes when clicked", () => {
-    //     const checkbox = container.querySelector("input");
-    //     const label = container.querySelector("label");
-    //     act(() => {
-    //         checkbox.dispatchEvent(new MouseEvent("click", { bubbles: true }));
-    //     });
-    //     expect(label.textContent).toBe("Active");
-    //     expect(checkbox.checked).toBe(true);
-    // });
+    it("Like paragraph increments when button is clicked ", () => {
+        const button= container.querySelector("#increment");
+        const p = container.querySelector("p");
+        likes=parseInt(p.textContent.split(':')[1].trim(), 10);
+        act(() => {
+            button.dispatchEvent(new MouseEvent("click", { bubbles: true }));
+        });
+        expect(parseInt(p.textContent.split(':')[1].trim(), 10)).toBe(likes+1);
+;
+    });
 
 });
